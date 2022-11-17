@@ -6,11 +6,13 @@ import axios from 'axios';
 dotenv.config();
 
 const bot = new Telegraf(process.env.BOT_TOKEN ?? '');
-bot.start((ctx) => ctx.reply('Welcome'));
-bot.help((ctx) => ctx.reply('Send me a sticker'));
+bot.start((ctx) => ctx.reply('Hi! Search for any paper and get its bibtex!'));
+bot.help((ctx) => ctx.reply('Hi! Search for any paper and get its bibtex!'));
 bot.on('text', async (ctx) => {
     const paper = ctx.message?.text;
     if (!paper) return;
+
+    ctx.telegram.sendChatAction(ctx.chat.id, 'typing');
 
     let result = 'Error trying to get bibtex';
     try {
