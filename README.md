@@ -1,6 +1,11 @@
 # bibtex-bot
 Search for a paper and get its bibtex on Telegram
 
+## How to use
+Text the bot on telegram [@bibtexcitebot](https://t.me/bibtexcitebot)
+
+If it doesn't work, my server might be down, sorry.
+
 ## How it works
 The bot will search the query on google scholar and return the bibtex for the first result.
 
