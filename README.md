@@ -1,8 +1,5 @@
 # bibtex-bot
-Get bibtex for a paper from Telegram
-
-Query the bot for a paper by its title, doi, ... and it will return the bibtex for the paper.
-
+Search for a paper and get its bibtex on Telegram
 
 ## How it works
 The bot will search the query on google scholar and return the bibtex for the first result.
